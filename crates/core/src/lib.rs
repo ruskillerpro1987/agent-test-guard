@@ -14,9 +14,12 @@ pub use canonical::{
 };
 pub use crypto::{
     blake3_hash, blake3_hash_hex, blake3_keyed_hash, blake3_keyed_hash_hex, derive_key,
-    generate_keypair, sign, sign_hex, signing_key_from_hex, signing_key_to_hex, verify,
-    verify_hex, verify_raw, verifying_key_from_hex, verifying_key_to_hex, CryptoError, Signature,
-    SigningKey, VerifyingKey,
+    generate_keypair, sign, sign_hex, signing_key_from_hex, signing_key_to_hex, verify, verify_hex,
+    verify_raw, verifying_key_from_hex, verifying_key_to_hex, CryptoError, Signature, SigningKey,
+    VerifyingKey,
+};
+pub use ratchet::{
+    advance_baseline, verify_ratchet, RatchetDiff, RatchetError, RatchetOptions, TestItemDelta,
 };
 pub use schema::{
     BaselineConfig, BaselineManifest, RatchetState, SchemaError, SignatureBlock, TestFileBaseline,

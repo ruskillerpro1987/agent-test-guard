@@ -1,8 +1,8 @@
 use agent_test_guard_core::crypto::{
     blake3_hash, blake3_hash_hex, blake3_keyed_hash, blake3_keyed_hash_hex, derive_key,
-    generate_keypair, sign, sign_hex, signing_key_from_hex, signing_key_to_hex, verify,
-    verify_hex, verify_raw, verifying_key_from_hex, verifying_key_to_hex, CryptoError,
-    SigningKey, VerifyingKey,
+    generate_keypair, sign, sign_hex, signing_key_from_hex, signing_key_to_hex, verify, verify_hex,
+    verify_raw, verifying_key_from_hex, verifying_key_to_hex, CryptoError, SigningKey,
+    VerifyingKey,
 };
 
 #[test]
@@ -150,7 +150,11 @@ fn test_ed25519_verify_fails_when_signature_corrupted() {
 
     let valid_sig_hex = sign_hex(&signing_key, message);
     let mut corrupted_sig_hex = valid_sig_hex;
-    let replacement = if corrupted_sig_hex.starts_with("aa") { "bb" } else { "aa" };
+    let replacement = if corrupted_sig_hex.starts_with("aa") {
+        "bb"
+    } else {
+        "aa"
+    };
     corrupted_sig_hex.replace_range(0..2, replacement);
 
     // When: verifying with corrupted signature bytes and hex

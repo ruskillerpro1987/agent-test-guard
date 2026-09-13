@@ -55,8 +55,7 @@ fn test_baseline_roundtrip_when_valid_json_serialized_and_deserialized() {
     });
 
     // When: serializing to JSON and deserializing back
-    let serialized =
-        serde_json::to_string_pretty(&manifest).expect("serialization should succeed");
+    let serialized = serde_json::to_string_pretty(&manifest).expect("serialization should succeed");
     let deserialized: BaselineManifest =
         serde_json::from_str(&serialized).expect("deserialization should succeed");
 
@@ -73,7 +72,10 @@ fn test_validate_succeeds_when_manifest_is_well_formed() {
     let result = manifest.validate();
 
     // Then: validation succeeds
-    assert!(result.is_ok(), "expected validation to succeed on well-formed manifest");
+    assert!(
+        result.is_ok(),
+        "expected validation to succeed on well-formed manifest"
+    );
 }
 
 #[test]
@@ -201,7 +203,9 @@ fn test_canonical_digest_when_manifest_formatted_or_keys_reordered() {
     let manifest = sample_valid_manifest();
 
     // When: computing digest directly and after deserializing reordered JSON
-    let digest_direct = manifest.digest().expect("digest calculation should succeed");
+    let digest_direct = manifest
+        .digest()
+        .expect("digest calculation should succeed");
     let json_value: serde_json::Value =
         serde_json::to_value(&manifest).expect("conversion to Value should succeed");
     let reordered_manifest: BaselineManifest =
@@ -239,7 +243,10 @@ fn test_signing_and_verification_when_valid_ed25519_key() {
     let is_valid = manifest
         .verify_signature()
         .expect("signature verification should execute");
-    assert!(is_valid, "verify_signature must return Ok(true) for valid signature");
+    assert!(
+        is_valid,
+        "verify_signature must return Ok(true) for valid signature"
+    );
 }
 
 #[test]
@@ -305,8 +312,7 @@ fn test_enums_serialization_when_language_and_tier_used() {
 
     // When & Then: TestTier serializes to clean snake_case strings and roundtrips
     for (tier, expected_json) in tiers {
-        let serialized =
-            serde_json::to_string(&tier).expect("tier serialization should succeed");
+        let serialized = serde_json::to_string(&tier).expect("tier serialization should succeed");
         assert_eq!(serialized, expected_json);
         let deserialized: TestTier =
             serde_json::from_str(&serialized).expect("tier deserialization should succeed");

@@ -44,7 +44,10 @@ fn main() {
             println!("Initializing Agent Test Guard baseline...");
         }
         Some(Commands::Check { staged, deep }) => {
-            println!("Running verification check (staged: {}, deep: {})...", staged, deep);
+            println!(
+                "Running verification check (staged: {}, deep: {})...",
+                staged, deep
+            );
         }
         Some(Commands::Ratchet { allow_shrink }) => {
             println!("Ratcheting baseline (allow_shrink: {})...", allow_shrink);

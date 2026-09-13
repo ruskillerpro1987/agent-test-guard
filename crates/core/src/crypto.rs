@@ -1,7 +1,7 @@
 //! Cryptographic primitives: BLAKE3 keyed hashing and Ed25519 signing/verification
 
-use ed25519_dalek::{Signer, Verifier};
 pub use ed25519_dalek::{Signature, SigningKey, VerifyingKey};
+use ed25519_dalek::{Signer, Verifier};
 use thiserror::Error;
 
 /// Cryptographic errors.
