@@ -1,0 +1,15 @@
+[package]
+name = "agent-test-guard-ast"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+agent-test-guard-core = { path = "../core" }
+tree-sitter.workspace = true
+thiserror.workspace = true
+blake3.workspace = true
+
+[build-dependencies]
+cc.workspace = true

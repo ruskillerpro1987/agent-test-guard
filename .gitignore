@@ -1,0 +1,33 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Node / npm
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# Environment, Secrets, Credentials
+.env
+.env.*
+*.secret
+*.key
+*.pem
+*.token
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Graphify cache
+graphify-out/cache/
+graphify-out/.rebuild.lock
+
+# Agent runtime artifacts
+.omo/
+luma_runner.pid
+test-results/
