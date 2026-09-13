@@ -144,6 +144,281 @@
       "norm_label": "schema.rs"
     },
     {
+      "label": "BaselineConfig",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_baselineconfig",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "baselineconfig"
+    },
+    {
+      "label": ".default()",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_baselineconfig_default",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": ".default()"
+    },
+    {
+      "label": "BaselineManifest",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_baselinemanifest",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "baselinemanifest"
+    },
+    {
+      "label": ".digest()",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L214",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_baselinemanifest_digest",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": ".digest()"
+    },
+    {
+      "label": ".sign()",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L220",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_baselinemanifest_sign",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": ".sign()"
+    },
+    {
+      "label": ".signing_bytes()",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L207",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_baselinemanifest_signing_bytes",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": ".signing_bytes()"
+    },
+    {
+      "label": ".validate()",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_baselinemanifest_validate",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": ".validate()"
+    },
+    {
+      "label": ".verify_signature()",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L233",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_baselinemanifest_verify_signature",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": ".verify_signature()"
+    },
+    {
+      "label": "is_hex_len()",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_is_hex_len",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "is_hex_len()"
+    },
+    {
+      "label": "is_valid_path()",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_is_valid_path",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "is_valid_path()"
+    },
+    {
+      "label": "RatchetState",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_ratchetstate",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "ratchetstate"
+    },
+    {
+      "label": "Error",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_rs_error",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "error"
+    },
+    {
+      "label": "Option",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_rs_option",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "option"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_rs_result",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "result"
+    },
+    {
+      "label": "Self",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_rs_self",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "self"
+    },
+    {
+      "label": "SigningKey",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_rs_signingkey",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "signingkey"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_rs_string",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "string"
+    },
+    {
+      "label": "Vec",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_rs_vec",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "vec"
+    },
+    {
+      "label": "SchemaError",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_schemaerror",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "schemaerror"
+    },
+    {
+      "label": "SignatureBlock",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_signatureblock",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "signatureblock"
+    },
+    {
+      "label": "TestFileBaseline",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_testfilebaseline",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "testfilebaseline"
+    },
+    {
+      "label": "TestItemBaseline",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_testitembaseline",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "testitembaseline"
+    },
+    {
+      "label": "TestLanguage",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_testlanguage",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "testlanguage"
+    },
+    {
+      "label": "TestTier",
+      "file_type": "code",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "crates_core_src_schema_testtier",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "testtier"
+    },
+    {
+      "label": "Default",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "default",
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "default"
+    },
+    {
       "label": "anti_hollowing.rs",
       "file_type": "code",
       "source_file": "crates/rules/src/anti_hollowing.rs",
@@ -507,48 +782,15 @@
       "norm_label": "workspace & crate hierarchy"
     },
     {
-      "label": "AuditRecord",
-      "file_type": "code",
-      "source_file": "crates/core/tests/canonical_test.rs",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "crates_core_tests_canonical_test_auditrecord",
-      "community": 22,
-      "community_name": "AuditRecord",
-      "norm_label": "auditrecord"
-    },
-    {
-      "label": "LogMeta",
-      "file_type": "code",
-      "source_file": "crates/core/tests/canonical_test.rs",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "crates_core_tests_canonical_test_logmeta",
-      "community": 22,
-      "community_name": "AuditRecord",
-      "norm_label": "logmeta"
-    },
-    {
-      "label": "String",
+      "label": "SigningKey",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "crates_core_tests_canonical_test_rs_string",
+      "id": "crates_core_src_crypto_rs_signingkey",
       "community": 22,
-      "community_name": "AuditRecord",
-      "norm_label": "string"
-    },
-    {
-      "label": "generate_keypair()",
-      "file_type": "code",
-      "source_file": "crates/core/src/crypto.rs",
-      "source_location": "L137",
-      "_origin": "ast",
-      "id": "crates_core_src_crypto_generate_keypair",
-      "community": 23,
-      "community_name": "verify",
-      "norm_label": "generate_keypair()"
+      "community_name": "sign_hex",
+      "norm_label": "signingkey"
     },
     {
       "label": "sign()",
@@ -557,8 +799,8 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "crates_core_src_crypto_sign",
-      "community": 23,
-      "community_name": "verify",
+      "community": 22,
+      "community_name": "sign_hex",
       "norm_label": "sign()"
     },
     {
@@ -568,9 +810,53 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "crates_core_src_crypto_sign_hex",
-      "community": 23,
-      "community_name": "verify",
+      "community": 22,
+      "community_name": "sign_hex",
       "norm_label": "sign_hex()"
+    },
+    {
+      "label": "Signature",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "signature",
+      "community": 22,
+      "community_name": "sign_hex",
+      "norm_label": "signature"
+    },
+    {
+      "label": "fill_random_bytes()",
+      "file_type": "code",
+      "source_file": "crates/core/src/crypto.rs",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "crates_core_src_crypto_fill_random_bytes",
+      "community": 23,
+      "community_name": "generate_keypair",
+      "norm_label": "fill_random_bytes()"
+    },
+    {
+      "label": "generate_keypair()",
+      "file_type": "code",
+      "source_file": "crates/core/src/crypto.rs",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "crates_core_src_crypto_generate_keypair",
+      "community": 23,
+      "community_name": "generate_keypair",
+      "norm_label": "generate_keypair()"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_crypto_rs_result",
+      "community": 23,
+      "community_name": "generate_keypair",
+      "norm_label": "result"
     },
     {
       "label": "verify()",
@@ -580,8 +866,19 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_verify",
       "community": 23,
-      "community_name": "verify",
+      "community_name": "generate_keypair",
       "norm_label": "verify()"
+    },
+    {
+      "label": "verify_hex()",
+      "file_type": "code",
+      "source_file": "crates/core/src/crypto.rs",
+      "source_location": "L179",
+      "_origin": "ast",
+      "id": "crates_core_src_crypto_verify_hex",
+      "community": 23,
+      "community_name": "generate_keypair",
+      "norm_label": "verify_hex()"
     },
     {
       "label": "verify_raw()",
@@ -591,7 +888,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_verify_raw",
       "community": 23,
-      "community_name": "verify",
+      "community_name": "generate_keypair",
       "norm_label": "verify_raw()"
     },
     {
@@ -602,7 +899,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_verifying_key_to_hex",
       "community": 23,
-      "community_name": "verify",
+      "community_name": "generate_keypair",
       "norm_label": "verifying_key_to_hex()"
     },
     {
@@ -613,7 +910,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_crypto_test_test_ed25519_sign_and_verify_when_valid_keypair_and_payload",
       "community": 23,
-      "community_name": "verify",
+      "community_name": "generate_keypair",
       "norm_label": "test_ed25519_sign_and_verify_when_valid_keypair_and_payload()"
     },
     {
@@ -624,7 +921,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_crypto_test_test_ed25519_verify_fails_when_message_tampered",
       "community": 23,
-      "community_name": "verify",
+      "community_name": "generate_keypair",
       "norm_label": "test_ed25519_verify_fails_when_message_tampered()"
     },
     {
@@ -635,7 +932,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_crypto_test_test_ed25519_verify_fails_when_signature_corrupted",
       "community": 23,
-      "community_name": "verify",
+      "community_name": "generate_keypair",
       "norm_label": "test_ed25519_verify_fails_when_signature_corrupted()"
     },
     {
@@ -646,30 +943,8 @@
       "_origin": "ast",
       "id": "crates_core_tests_crypto_test_test_ed25519_verify_fails_when_wrong_public_key",
       "community": 23,
-      "community_name": "verify",
+      "community_name": "generate_keypair",
       "norm_label": "test_ed25519_verify_fails_when_wrong_public_key()"
-    },
-    {
-      "label": "Signature",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "signature",
-      "community": 23,
-      "community_name": "verify",
-      "norm_label": "signature"
-    },
-    {
-      "label": "SigningKey",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "signingkey",
-      "community": 23,
-      "community_name": "verify",
-      "norm_label": "signingkey"
     },
     {
       "label": "VerifyingKey",
@@ -679,8 +954,19 @@
       "_origin": "ast",
       "id": "verifyingkey",
       "community": 23,
-      "community_name": "verify",
+      "community_name": "generate_keypair",
       "norm_label": "verifyingkey"
+    },
+    {
+      "label": "crypto.rs",
+      "file_type": "code",
+      "source_file": "crates/core/src/crypto.rs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "crates_core_src_crypto",
+      "community": 24,
+      "community_name": "crypto.rs",
+      "norm_label": "crypto.rs"
     },
     {
       "label": "blake3_hash()",
@@ -690,7 +976,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_blake3_hash",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "blake3_hash()"
     },
     {
@@ -701,7 +987,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_blake3_hash_hex",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "blake3_hash_hex()"
     },
     {
@@ -712,7 +998,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_blake3_keyed_hash",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "blake3_keyed_hash()"
     },
     {
@@ -723,7 +1009,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_blake3_keyed_hash_hex",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "blake3_keyed_hash_hex()"
     },
     {
@@ -734,7 +1020,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_hex_encode",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "hex_encode()"
     },
     {
@@ -745,7 +1031,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_rs_string",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "string"
     },
     {
@@ -756,7 +1042,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_signing_key_to_hex",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "signing_key_to_hex()"
     },
     {
@@ -767,7 +1053,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_crypto_test_test_blake3_hash_when_empty_string_and_arbitrary_data",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "test_blake3_hash_when_empty_string_and_arbitrary_data()"
     },
     {
@@ -778,19 +1064,19 @@
       "_origin": "ast",
       "id": "crates_core_tests_crypto_test_test_blake3_keyed_hash_when_different_keys_and_same_key",
       "community": 24,
-      "community_name": "hex_encode",
+      "community_name": "crypto.rs",
       "norm_label": "test_blake3_keyed_hash_when_different_keys_and_same_key()"
     },
     {
-      "label": "Result",
+      "label": "derive_key()",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "crates/core/src/crypto.rs",
+      "source_location": "L109",
       "_origin": "ast",
-      "id": "crates_core_src_crypto_rs_result",
+      "id": "crates_core_src_crypto_derive_key",
       "community": 25,
-      "community_name": "verify_hex",
-      "norm_label": "result"
+      "community_name": "crypto_test.rs",
+      "norm_label": "derive_key()"
     },
     {
       "label": "signing_key_from_hex()",
@@ -800,19 +1086,8 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_signing_key_from_hex",
       "community": 25,
-      "community_name": "verify_hex",
+      "community_name": "crypto_test.rs",
       "norm_label": "signing_key_from_hex()"
-    },
-    {
-      "label": "verify_hex()",
-      "file_type": "code",
-      "source_file": "crates/core/src/crypto.rs",
-      "source_location": "L179",
-      "_origin": "ast",
-      "id": "crates_core_src_crypto_verify_hex",
-      "community": 25,
-      "community_name": "verify_hex",
-      "norm_label": "verify_hex()"
     },
     {
       "label": "verifying_key_from_hex()",
@@ -822,41 +1097,8 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_verifying_key_from_hex",
       "community": 25,
-      "community_name": "verify_hex",
-      "norm_label": "verifying_key_from_hex()"
-    },
-    {
-      "label": "test_hex_decode_fails_when_invalid_hex_or_wrong_length()",
-      "file_type": "code",
-      "source_file": "crates/core/tests/crypto_test.rs",
-      "source_location": "L186",
-      "_origin": "ast",
-      "id": "crates_core_tests_crypto_test_test_hex_decode_fails_when_invalid_hex_or_wrong_length",
-      "community": 25,
-      "community_name": "verify_hex",
-      "norm_label": "test_hex_decode_fails_when_invalid_hex_or_wrong_length()"
-    },
-    {
-      "label": "test_hex_roundtrip_when_signing_and_verifying_keys()",
-      "file_type": "code",
-      "source_file": "crates/core/tests/crypto_test.rs",
-      "source_location": "L167",
-      "_origin": "ast",
-      "id": "crates_core_tests_crypto_test_test_hex_roundtrip_when_signing_and_verifying_keys",
-      "community": 25,
-      "community_name": "verify_hex",
-      "norm_label": "test_hex_roundtrip_when_signing_and_verifying_keys()"
-    },
-    {
-      "label": "derive_key()",
-      "file_type": "code",
-      "source_file": "crates/core/src/crypto.rs",
-      "source_location": "L109",
-      "_origin": "ast",
-      "id": "crates_core_src_crypto_derive_key",
-      "community": 26,
       "community_name": "crypto_test.rs",
-      "norm_label": "derive_key()"
+      "norm_label": "verifying_key_from_hex()"
     },
     {
       "label": "crypto_test.rs",
@@ -865,7 +1107,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "crates_core_tests_crypto_test",
-      "community": 26,
+      "community": 25,
       "community_name": "crypto_test.rs",
       "norm_label": "crypto_test.rs"
     },
@@ -876,9 +1118,31 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "crates_core_tests_crypto_test_test_derive_key_when_different_contexts_and_same_material",
-      "community": 26,
+      "community": 25,
       "community_name": "crypto_test.rs",
       "norm_label": "test_derive_key_when_different_contexts_and_same_material()"
+    },
+    {
+      "label": "test_hex_decode_fails_when_invalid_hex_or_wrong_length()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/crypto_test.rs",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "crates_core_tests_crypto_test_test_hex_decode_fails_when_invalid_hex_or_wrong_length",
+      "community": 25,
+      "community_name": "crypto_test.rs",
+      "norm_label": "test_hex_decode_fails_when_invalid_hex_or_wrong_length()"
+    },
+    {
+      "label": "test_hex_roundtrip_when_signing_and_verifying_keys()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/crypto_test.rs",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "crates_core_tests_crypto_test_test_hex_roundtrip_when_signing_and_verifying_keys",
+      "community": 25,
+      "community_name": "crypto_test.rs",
+      "norm_label": "test_hex_roundtrip_when_signing_and_verifying_keys()"
     },
     {
       "label": "grammar.rs",
@@ -932,7 +1196,7 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "canonical.rs"
     },
     {
@@ -943,7 +1207,7 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_canonicalerror",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "canonicalerror"
     },
     {
@@ -954,7 +1218,7 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_canonicalerror_from",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": ".from()"
     },
     {
@@ -965,7 +1229,7 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_canonicalize_json_str",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "canonicalize_json_str()"
     },
     {
@@ -976,8 +1240,19 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_canonicalize_value",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "canonicalize_value()"
+    },
+    {
+      "label": "Error",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_rs_error",
+      "community": 7,
+      "community_name": "CanonicalError",
+      "norm_label": "error"
     },
     {
       "label": "Result",
@@ -987,8 +1262,19 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_rs_result",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "result"
+    },
+    {
+      "label": "Self",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_rs_self",
+      "community": 7,
+      "community_name": "CanonicalError",
+      "norm_label": "self"
     },
     {
       "label": "String",
@@ -998,7 +1284,7 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_rs_string",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "string"
     },
     {
@@ -1009,7 +1295,7 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_rs_vec",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "vec"
     },
     {
@@ -1020,7 +1306,7 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_to_canonical_string",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "to_canonical_string()"
     },
     {
@@ -1031,8 +1317,19 @@
       "_origin": "ast",
       "id": "crates_core_src_canonical_to_canonical_vec",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "to_canonical_vec()"
+    },
+    {
+      "label": "core/src/lib.rs",
+      "file_type": "code",
+      "source_file": "crates/core/src/lib.rs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "crates_core_src_lib",
+      "community": 7,
+      "community_name": "CanonicalError",
+      "norm_label": "core/src/lib.rs"
     },
     {
       "label": "canonical_test.rs",
@@ -1042,8 +1339,41 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "canonical_test.rs"
+    },
+    {
+      "label": "AuditRecord",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_auditrecord",
+      "community": 7,
+      "community_name": "CanonicalError",
+      "norm_label": "auditrecord"
+    },
+    {
+      "label": "LogMeta",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_logmeta",
+      "community": 7,
+      "community_name": "CanonicalError",
+      "norm_label": "logmeta"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_rs_string",
+      "community": 7,
+      "community_name": "CanonicalError",
+      "norm_label": "string"
     },
     {
       "label": "test_array_ordering_when_elements_unordered()",
@@ -1053,7 +1383,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test_test_array_ordering_when_elements_unordered",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "test_array_ordering_when_elements_unordered()"
     },
     {
@@ -1064,7 +1394,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test_test_error_handling_when_invalid_json_or_non_finite_float",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "test_error_handling_when_invalid_json_or_non_finite_float()"
     },
     {
@@ -1075,7 +1405,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test_test_idempotence_when_canonicalized_repeatedly",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "test_idempotence_when_canonicalized_repeatedly()"
     },
     {
@@ -1086,7 +1416,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test_test_lexicographical_key_sorting_when_nested_and_utf16_code_units",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "test_lexicographical_key_sorting_when_nested_and_utf16_code_units()"
     },
     {
@@ -1097,7 +1427,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test_test_minimal_escaping_when_control_chars_and_utf8_present",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "test_minimal_escaping_when_control_chars_and_utf8_present()"
     },
     {
@@ -1108,7 +1438,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test_test_number_formatting_when_floats_and_integers_processed",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "test_number_formatting_when_floats_and_integers_processed()"
     },
     {
@@ -1119,7 +1449,7 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test_test_typed_struct_serialization_when_string_and_vec_invoked",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "test_typed_struct_serialization_when_string_and_vec_invoked()"
     },
     {
@@ -1130,19 +1460,8 @@
       "_origin": "ast",
       "id": "crates_core_tests_canonical_test_test_whitespace_removal_when_multiline_and_spaced_json",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "test_whitespace_removal_when_multiline_and_spaced_json()"
-    },
-    {
-      "label": "Error",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "error",
-      "community": 7,
-      "community_name": "canonicalize_value",
-      "norm_label": "error"
     },
     {
       "label": "From",
@@ -1152,7 +1471,7 @@
       "_origin": "ast",
       "id": "from",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "from"
     },
     {
@@ -1163,19 +1482,8 @@
       "_origin": "ast",
       "id": "fromutf8error",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "fromutf8error"
-    },
-    {
-      "label": "Self",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "self",
-      "community": 7,
-      "community_name": "canonicalize_value",
-      "norm_label": "self"
     },
     {
       "label": "T",
@@ -1185,7 +1493,7 @@
       "_origin": "ast",
       "id": "t",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "t"
     },
     {
@@ -1196,19 +1504,8 @@
       "_origin": "ast",
       "id": "value",
       "community": 7,
-      "community_name": "canonicalize_value",
+      "community_name": "CanonicalError",
       "norm_label": "value"
-    },
-    {
-      "label": "crypto.rs",
-      "file_type": "code",
-      "source_file": "crates/core/src/crypto.rs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "crates_core_src_crypto",
-      "community": 8,
-      "community_name": "crypto.rs",
-      "norm_label": "crypto.rs"
     },
     {
       "label": "CryptoError",
@@ -1218,7 +1515,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_cryptoerror",
       "community": 8,
-      "community_name": "crypto.rs",
+      "community_name": "CryptoError",
       "norm_label": "cryptoerror"
     },
     {
@@ -1229,19 +1526,8 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_decode_fixed_hex",
       "community": 8,
-      "community_name": "crypto.rs",
+      "community_name": "CryptoError",
       "norm_label": "decode_fixed_hex()"
-    },
-    {
-      "label": "fill_random_bytes()",
-      "file_type": "code",
-      "source_file": "crates/core/src/crypto.rs",
-      "source_location": "L113",
-      "_origin": "ast",
-      "id": "crates_core_src_crypto_fill_random_bytes",
-      "community": 8,
-      "community_name": "crypto.rs",
-      "norm_label": "fill_random_bytes()"
     },
     {
       "label": "hex_decode()",
@@ -1251,7 +1537,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_hex_decode",
       "community": 8,
-      "community_name": "crypto.rs",
+      "community_name": "CryptoError",
       "norm_label": "hex_decode()"
     },
     {
@@ -1262,7 +1548,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_hex_val",
       "community": 8,
-      "community_name": "crypto.rs",
+      "community_name": "CryptoError",
       "norm_label": "hex_val()"
     },
     {
@@ -1273,7 +1559,7 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_rs_option",
       "community": 8,
-      "community_name": "crypto.rs",
+      "community_name": "CryptoError",
       "norm_label": "option"
     },
     {
@@ -1284,19 +1570,162 @@
       "_origin": "ast",
       "id": "crates_core_src_crypto_rs_vec",
       "community": 8,
-      "community_name": "crypto.rs",
+      "community_name": "CryptoError",
       "norm_label": "vec"
     },
     {
-      "label": "core/src/lib.rs",
+      "label": "schema_test.rs",
       "file_type": "code",
-      "source_file": "crates/core/src/lib.rs",
+      "source_file": "crates/core/tests/schema_test.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "crates_core_src_lib",
+      "id": "crates_core_tests_schema_test",
       "community": 9,
-      "community_name": "core/src/lib.rs",
-      "norm_label": "core/src/lib.rs"
+      "community_name": "schema_test.rs",
+      "norm_label": "schema_test.rs"
+    },
+    {
+      "label": "sample_valid_manifest()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_sample_valid_manifest",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "sample_valid_manifest()"
+    },
+    {
+      "label": "test_baseline_roundtrip_when_valid_json_serialized_and_deserialized()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_baseline_roundtrip_when_valid_json_serialized_and_deserialized",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_baseline_roundtrip_when_valid_json_serialized_and_deserialized()"
+    },
+    {
+      "label": "test_canonical_digest_when_manifest_formatted_or_keys_reordered()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_canonical_digest_when_manifest_formatted_or_keys_reordered",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_canonical_digest_when_manifest_formatted_or_keys_reordered()"
+    },
+    {
+      "label": "test_enums_serialization_when_language_and_tier_used()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L281",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_enums_serialization_when_language_and_tier_used",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_enums_serialization_when_language_and_tier_used()"
+    },
+    {
+      "label": "test_signing_and_verification_when_valid_ed25519_key()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L220",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_signing_and_verification_when_valid_ed25519_key",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_signing_and_verification_when_valid_ed25519_key()"
+    },
+    {
+      "label": "test_validate_fails_when_assertion_floor_violated()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_validate_fails_when_assertion_floor_violated",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_validate_fails_when_assertion_floor_violated()"
+    },
+    {
+      "label": "test_validate_fails_when_duplicate_test_id_present()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_validate_fails_when_duplicate_test_id_present",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_validate_fails_when_duplicate_test_id_present()"
+    },
+    {
+      "label": "test_validate_fails_when_files_count_mismatches_actual_count()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_validate_fails_when_files_count_mismatches_actual_count",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_validate_fails_when_files_count_mismatches_actual_count()"
+    },
+    {
+      "label": "test_validate_fails_when_hash_or_fingerprint_hex_is_invalid()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_validate_fails_when_hash_or_fingerprint_hex_is_invalid",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_validate_fails_when_hash_or_fingerprint_hex_is_invalid()"
+    },
+    {
+      "label": "test_validate_fails_when_path_is_invalid_or_not_normalized()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_validate_fails_when_path_is_invalid_or_not_normalized",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_validate_fails_when_path_is_invalid_or_not_normalized()"
+    },
+    {
+      "label": "test_validate_fails_when_total_tests_mismatches_actual_count()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_validate_fails_when_total_tests_mismatches_actual_count",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_validate_fails_when_total_tests_mismatches_actual_count()"
+    },
+    {
+      "label": "test_validate_succeeds_when_manifest_is_well_formed()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_validate_succeeds_when_manifest_is_well_formed",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_validate_succeeds_when_manifest_is_well_formed()"
+    },
+    {
+      "label": "test_verification_fails_when_signed_manifest_is_tampered()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L246",
+      "_origin": "ast",
+      "id": "crates_core_tests_schema_test_test_verification_fails_when_signed_manifest_is_tampered",
+      "community": 9,
+      "community_name": "schema_test.rs",
+      "norm_label": "test_verification_fails_when_signed_manifest_is_tampered()"
     }
   ],
   "links": [
@@ -1505,6 +1934,186 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L221",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_sign",
+      "target": "crates_core_src_schema_baselinemanifest_signing_bytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_validate",
+      "target": "crates_core_src_schema_is_valid_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_validate",
+      "target": "crates_core_src_schema_is_hex_len",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L238",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_verify_signature",
+      "target": "crates_core_src_schema_baselinemanifest_signing_bytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_baseline_roundtrip_when_valid_json_serialized_and_deserialized",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L201",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_canonical_digest_when_manifest_formatted_or_keys_reordered",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_signing_and_verification_when_valid_ed25519_key",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_validate_fails_when_assertion_floor_violated",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_validate_fails_when_duplicate_test_id_present",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_validate_fails_when_files_count_mismatches_actual_count",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_validate_fails_when_hash_or_fingerprint_hex_is_invalid",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_validate_fails_when_path_is_invalid_or_not_normalized",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_validate_fails_when_total_tests_mismatches_actual_count",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_validate_succeeds_when_manifest_is_well_formed",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L248",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_verification_fails_when_signed_manifest_is_tampered",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "depends_on",
       "context": "dependency",
       "confidence": "EXTRACTED",
@@ -1609,7 +2218,7 @@
       "context": "field",
       "_origin": "ast",
       "source": "crates_core_src_canonical_canonicalerror",
-      "target": "error",
+      "target": "crates_core_src_canonical_rs_error",
       "confidence_score": 1.0
     },
     {
@@ -1622,6 +2231,174 @@
       "_origin": "ast",
       "source": "crates_core_src_crypto_cryptoerror",
       "target": "crates_core_src_crypto_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L83",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_baselineconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L84",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_ratchetstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_rs_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L87",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L113",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_schemaerror",
+      "target": "crates_core_src_schema_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_schemaerror",
+      "target": "crates_core_src_canonical_canonicalerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L122",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_schemaerror",
+      "target": "crates_core_src_crypto_cryptoerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L125",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_schemaerror",
+      "target": "crates_core_src_schema_rs_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L76",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_signatureblock",
+      "target": "crates_core_src_schema_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_testfilebaseline",
+      "target": "crates_core_src_schema_testlanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L45",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_testfilebaseline",
+      "target": "crates_core_src_schema_testtier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_testfilebaseline",
+      "target": "crates_core_src_schema_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L47",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_testfilebaseline",
+      "target": "crates_core_src_schema_rs_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_testitembaseline",
+      "target": "crates_core_src_schema_rs_string",
       "confidence_score": 1.0
     },
     {
@@ -1849,7 +2626,7 @@
       "context": "generic_arg",
       "_origin": "ast",
       "source": "crates_core_src_crypto_signing_key_from_hex",
-      "target": "signingkey",
+      "target": "crates_core_src_crypto_rs_signingkey",
       "confidence_score": 1.0
     },
     {
@@ -1913,6 +2690,126 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_testfilebaseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L87",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_signatureblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L214",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_digest",
+      "target": "crates_core_src_schema_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L214",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_digest",
+      "target": "crates_core_src_schema_schemaerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L220",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_sign",
+      "target": "crates_core_src_schema_schemaerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L207",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_signing_bytes",
+      "target": "crates_core_src_schema_rs_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L207",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_signing_bytes",
+      "target": "crates_core_src_schema_schemaerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L142",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_validate",
+      "target": "crates_core_src_schema_schemaerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L233",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_verify_signature",
+      "target": "crates_core_src_schema_schemaerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L47",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_testfilebaseline",
+      "target": "crates_core_src_schema_testitembaseline",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "crates/core/src/canonical.rs",
@@ -1921,19 +2818,67 @@
       "context": "import",
       "_origin": "ast",
       "source": "crates_core_src_canonical",
-      "target": "error",
+      "target": "crates_core_src_canonical_rs_error",
       "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
-      "source_file": "crates/core/src/crypto.rs",
+      "source_file": "crates/core/src/lib.rs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_core_src_lib",
+      "target": "crates_core_src_canonical",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/lib.rs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_core_src_lib",
+      "target": "crates_core_src_crypto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/lib.rs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_core_src_lib",
+      "target": "crates_core_src_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
       "source_location": "L5",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "source": "crates_core_src_crypto",
-      "target": "error",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_rs_signingkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_rs_error",
       "confidence_score": 1.0
     },
     {
@@ -1958,6 +2903,18 @@
       "_origin": "ast",
       "source": "crates_core_tests_crypto_test",
       "target": "crates_core_src_crypto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_src_schema",
       "confidence_score": 1.0
     },
     {
@@ -2029,7 +2986,7 @@
       "context": "parameter_type",
       "_origin": "ast",
       "source": "crates_core_src_crypto_sign",
-      "target": "signingkey",
+      "target": "crates_core_src_crypto_rs_signingkey",
       "confidence_score": 1.0
     },
     {
@@ -2041,7 +2998,7 @@
       "context": "parameter_type",
       "_origin": "ast",
       "source": "crates_core_src_crypto_sign_hex",
-      "target": "signingkey",
+      "target": "crates_core_src_crypto_rs_signingkey",
       "confidence_score": 1.0
     },
     {
@@ -2053,7 +3010,7 @@
       "context": "parameter_type",
       "_origin": "ast",
       "source": "crates_core_src_crypto_signing_key_to_hex",
-      "target": "signingkey",
+      "target": "crates_core_src_crypto_rs_signingkey",
       "confidence_score": 1.0
     },
     {
@@ -2095,13 +3052,25 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L220",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_sign",
+      "target": "crates_core_src_schema_rs_signingkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "source_file": "crates/core/src/canonical.rs",
       "source_location": "L34",
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
       "source": "crates_core_src_canonical_canonicalerror_from",
-      "target": "self",
+      "target": "crates_core_src_canonical_rs_self",
       "confidence_score": 1.0
     },
     {
@@ -2197,7 +3166,7 @@
       "context": "return_type",
       "_origin": "ast",
       "source": "crates_core_src_crypto_generate_keypair",
-      "target": "signingkey",
+      "target": "crates_core_src_crypto_rs_signingkey",
       "confidence_score": 1.0
     },
     {
@@ -2354,6 +3323,90 @@
       "_origin": "ast",
       "source": "crates_core_src_crypto_verifying_key_to_hex",
       "target": "crates_core_src_crypto_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselineconfig_default",
+      "target": "crates_core_src_schema_rs_self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L214",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_digest",
+      "target": "crates_core_src_schema_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L220",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_sign",
+      "target": "crates_core_src_schema_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L207",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_signing_bytes",
+      "target": "crates_core_src_schema_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L142",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_validate",
+      "target": "crates_core_src_schema_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L233",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest_verify_signature",
+      "target": "crates_core_src_schema_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_sample_valid_manifest",
+      "target": "crates_core_src_schema_baselinemanifest",
       "confidence_score": 1.0
     },
     {
@@ -2777,6 +3830,127 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_testlanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_is_hex_len",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_is_valid_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_testtier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_testitembaseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_testfilebaseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_baselineconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_ratchetstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_signatureblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_baselinemanifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema",
+      "target": "crates_core_src_schema_schemaerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "crates/core/tests/canonical_test.rs",
       "source_location": "L108",
       "weight": 1.0,
@@ -2986,6 +4160,149 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_validate_fails_when_assertion_floor_violated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_validate_fails_when_duplicate_test_id_present",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_validate_fails_when_path_is_invalid_or_not_normalized",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_validate_fails_when_hash_or_fingerprint_hex_is_invalid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_canonical_digest_when_manifest_formatted_or_keys_reordered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L220",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_signing_and_verification_when_valid_ed25519_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_verification_fails_when_signed_manifest_is_tampered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L281",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_enums_serialization_when_language_and_tier_used",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_baseline_roundtrip_when_valid_json_serialized_and_deserialized",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_validate_succeeds_when_manifest_is_well_formed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_sample_valid_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_validate_fails_when_total_tests_mismatches_actual_count",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test",
+      "target": "crates_core_tests_schema_test_test_validate_fails_when_files_count_mismatches_actual_count",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -3116,6 +4433,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselineconfig",
+      "target": "default",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "crates/core/src/canonical.rs",
@@ -3124,6 +4452,72 @@
       "_origin": "ast",
       "source": "crates_core_src_canonical_canonicalerror",
       "target": "crates_core_src_canonical_canonicalerror_from",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselineconfig",
+      "target": "crates_core_src_schema_baselineconfig_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_baselinemanifest_validate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L207",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_baselinemanifest_signing_bytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L214",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_baselinemanifest_digest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L220",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_baselinemanifest_sign",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/schema.rs",
+      "source_location": "L233",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_schema_baselinemanifest",
+      "target": "crates_core_src_schema_baselinemanifest_verify_signature",
       "confidence_score": 1.0
     },
     {
@@ -3348,18 +4742,6 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "crates/core/tests/crypto_test.rs",
-      "source_location": "L74",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "crates_core_tests_crypto_test_test_ed25519_sign_and_verify_when_valid_keypair_and_payload",
-      "target": "crates_core_src_crypto_sign"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "crates/core/tests/crypto_test.rs",
       "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
@@ -3468,18 +4850,6 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "crates/core/tests/crypto_test.rs",
-      "source_location": "L93",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "crates_core_tests_crypto_test_test_ed25519_verify_fails_when_message_tampered",
-      "target": "crates_core_src_crypto_sign"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "crates/core/tests/crypto_test.rs",
       "source_location": "L94",
       "weight": 1.0,
       "_origin": "ast",
@@ -3509,18 +4879,6 @@
       "_origin": "ast",
       "source": "crates_core_tests_crypto_test_test_ed25519_verify_fails_when_signature_corrupted",
       "target": "crates_core_src_crypto_generate_keypair"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "crates/core/tests/crypto_test.rs",
-      "source_location": "L145",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "crates_core_tests_crypto_test_test_ed25519_verify_fails_when_signature_corrupted",
-      "target": "crates_core_src_crypto_sign"
     },
     {
       "relation": "calls",
@@ -3581,18 +4939,6 @@
       "_origin": "ast",
       "source": "crates_core_tests_crypto_test_test_ed25519_verify_fails_when_wrong_public_key",
       "target": "crates_core_src_crypto_generate_keypair"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "crates/core/tests/crypto_test.rs",
-      "source_location": "L121",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "crates_core_tests_crypto_test_test_ed25519_verify_fails_when_wrong_public_key",
-      "target": "crates_core_src_crypto_sign"
     },
     {
       "relation": "calls",
@@ -3749,8 +5095,32 @@
       "_origin": "ast",
       "source": "crates_core_tests_crypto_test_test_hex_roundtrip_when_signing_and_verifying_keys",
       "target": "crates_core_src_crypto_signing_key_from_hex"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L223",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_signing_and_verification_when_valid_ed25519_key",
+      "target": "crates_core_src_crypto_generate_keypair"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/schema_test.rs",
+      "source_location": "L249",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_schema_test_test_verification_fails_when_signed_manifest_is_tampered",
+      "target": "crates_core_src_crypto_generate_keypair"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "141edcb6572b07fe1922e53ad738956d6643fdae"
+  "built_at_commit": "3d55248d88eda12d7022efcb11a9ac0f629c66a8"
 }

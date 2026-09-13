@@ -6,9 +6,9 @@
   "4": "ast/src/lib.rs",
   "5": "parser.rs",
   "6": "queries.rs",
-  "7": "canonicalize_value",
-  "8": "crypto.rs",
-  "9": "core/src/lib.rs",
+  "7": "CanonicalError",
+  "8": "CryptoError",
+  "9": "schema_test.rs",
   "10": "ratchet.rs",
   "11": "schema.rs",
   "12": "anti_hollowing.rs",
@@ -21,9 +21,8 @@
   "19": "rules/src/lib.rs",
   "20": "🛡️ Agent Test Guard (`agent-test-guard`)",
   "21": "4-Phase Phased Implementation Roadmap",
-  "22": "AuditRecord",
-  "23": "verify",
-  "24": "hex_encode",
-  "25": "verify_hex",
-  "26": "crypto_test.rs"
+  "22": "sign_hex",
+  "23": "generate_keypair",
+  "24": "crypto.rs",
+  "25": "crypto_test.rs"
 }
