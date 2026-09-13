@@ -9,10 +9,10 @@
       "source_file": "crates/cli/src/main.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "main.rs",
       "id": "crates_cli_src_main",
-      "community_name": "main.rs"
+      "community": 0,
+      "community_name": "main.rs",
+      "norm_label": "main.rs"
     },
     {
       "label": "Cli",
@@ -20,10 +20,10 @@
       "source_file": "crates/cli/src/main.rs",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "cli",
       "id": "crates_cli_src_main_cli",
-      "community_name": "main.rs"
+      "community": 0,
+      "community_name": "main.rs",
+      "norm_label": "cli"
     },
     {
       "label": "Commands",
@@ -31,10 +31,10 @@
       "source_file": "crates/cli/src/main.rs",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "commands",
       "id": "crates_cli_src_main_commands",
-      "community_name": "main.rs"
+      "community": 0,
+      "community_name": "main.rs",
+      "norm_label": "commands"
     },
     {
       "label": "main()",
@@ -42,21 +42,10 @@
       "source_file": "crates/cli/src/main.rs",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "main()",
       "id": "crates_cli_src_main_main",
-      "community_name": "main.rs"
-    },
-    {
-      "label": "Option",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
       "community": 0,
-      "norm_label": "option",
-      "id": "option",
-      "community_name": "main.rs"
+      "community_name": "main.rs",
+      "norm_label": "main()"
     },
     {
       "label": "String",
@@ -64,10 +53,21 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "crates_cli_src_main_rs_string",
       "community": 0,
-      "norm_label": "string",
-      "id": "string",
-      "community_name": "main.rs"
+      "community_name": "main.rs",
+      "norm_label": "string"
+    },
+    {
+      "label": "Option",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "option",
+      "community": 0,
+      "community_name": "main.rs",
+      "norm_label": "option"
     },
     {
       "label": "agent-test-guard",
@@ -77,10 +77,10 @@
       "source_file": "crates/cli/Cargo.toml",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "agent-test-guard",
       "id": "pkg_agent_test_guard",
-      "community_name": "agent-test-guard"
+      "community": 1,
+      "community_name": "agent-test-guard",
+      "norm_label": "agent-test-guard"
     },
     {
       "label": "agent-test-guard-ast",
@@ -90,10 +90,10 @@
       "source_file": "crates/ast/Cargo.toml",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "agent-test-guard-ast",
       "id": "pkg_agent_test_guard_ast",
-      "community_name": "agent-test-guard"
+      "community": 1,
+      "community_name": "agent-test-guard",
+      "norm_label": "agent-test-guard-ast"
     },
     {
       "label": "agent-test-guard-core",
@@ -103,10 +103,10 @@
       "source_file": "crates/core/Cargo.toml",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "agent-test-guard-core",
       "id": "pkg_agent_test_guard_core",
-      "community_name": "agent-test-guard"
+      "community": 1,
+      "community_name": "agent-test-guard",
+      "norm_label": "agent-test-guard-core"
     },
     {
       "label": "agent-test-guard-rules",
@@ -116,10 +116,10 @@
       "source_file": "crates/rules/Cargo.toml",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "agent-test-guard-rules",
       "id": "pkg_agent_test_guard_rules",
-      "community_name": "agent-test-guard"
+      "community": 1,
+      "community_name": "agent-test-guard",
+      "norm_label": "agent-test-guard-rules"
     },
     {
       "label": "ratchet.rs",
@@ -127,10 +127,10 @@
       "source_file": "crates/core/src/ratchet.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "ratchet.rs",
       "id": "crates_core_src_ratchet",
-      "community_name": "ratchet.rs"
+      "community": 10,
+      "community_name": "ratchet.rs",
+      "norm_label": "ratchet.rs"
     },
     {
       "label": "schema.rs",
@@ -138,10 +138,10 @@
       "source_file": "crates/core/src/schema.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
-      "norm_label": "schema.rs",
       "id": "crates_core_src_schema",
-      "community_name": "schema.rs"
+      "community": 11,
+      "community_name": "schema.rs",
+      "norm_label": "schema.rs"
     },
     {
       "label": "anti_hollowing.rs",
@@ -149,10 +149,10 @@
       "source_file": "crates/rules/src/anti_hollowing.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
-      "norm_label": "anti_hollowing.rs",
       "id": "crates_rules_src_anti_hollowing",
-      "community_name": "anti_hollowing.rs"
+      "community": 12,
+      "community_name": "anti_hollowing.rs",
+      "norm_label": "anti_hollowing.rs"
     },
     {
       "label": "anti_mock.rs",
@@ -160,10 +160,10 @@
       "source_file": "crates/rules/src/anti_mock.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 13,
-      "norm_label": "anti_mock.rs",
       "id": "crates_rules_src_anti_mock",
-      "community_name": "anti_mock.rs"
+      "community": 13,
+      "community_name": "anti_mock.rs",
+      "norm_label": "anti_mock.rs"
     },
     {
       "label": "anti_skip.rs",
@@ -171,10 +171,10 @@
       "source_file": "crates/rules/src/anti_skip.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
-      "norm_label": "anti_skip.rs",
       "id": "crates_rules_src_anti_skip",
-      "community_name": "anti_skip.rs"
+      "community": 14,
+      "community_name": "anti_skip.rs",
+      "norm_label": "anti_skip.rs"
     },
     {
       "label": "anti_tautology.rs",
@@ -182,10 +182,10 @@
       "source_file": "crates/rules/src/anti_tautology.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
-      "norm_label": "anti_tautology.rs",
       "id": "crates_rules_src_anti_tautology",
-      "community_name": "anti_tautology.rs"
+      "community": 15,
+      "community_name": "anti_tautology.rs",
+      "norm_label": "anti_tautology.rs"
     },
     {
       "label": "diagnostic.rs",
@@ -193,10 +193,10 @@
       "source_file": "crates/rules/src/diagnostic.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 16,
-      "norm_label": "diagnostic.rs",
       "id": "crates_rules_src_diagnostic",
-      "community_name": "diagnostic.rs"
+      "community": 16,
+      "community_name": "diagnostic.rs",
+      "norm_label": "diagnostic.rs"
     },
     {
       "label": "engine.rs",
@@ -204,10 +204,10 @@
       "source_file": "crates/rules/src/engine.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 17,
-      "norm_label": "engine.rs",
       "id": "crates_rules_src_engine",
-      "community_name": "engine.rs"
+      "community": 17,
+      "community_name": "engine.rs",
+      "norm_label": "engine.rs"
     },
     {
       "label": "import_validator.rs",
@@ -215,10 +215,10 @@
       "source_file": "crates/rules/src/import_validator.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 18,
-      "norm_label": "import_validator.rs",
       "id": "crates_rules_src_import_validator",
-      "community_name": "import_validator.rs"
+      "community": 18,
+      "community_name": "import_validator.rs",
+      "norm_label": "import_validator.rs"
     },
     {
       "label": "rules/src/lib.rs",
@@ -226,10 +226,10 @@
       "source_file": "crates/rules/src/lib.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 19,
-      "norm_label": "rules/src/lib.rs",
       "id": "crates_rules_src_lib",
-      "community_name": "rules/src/lib.rs"
+      "community": 19,
+      "community_name": "rules/src/lib.rs",
+      "norm_label": "rules/src/lib.rs"
     },
     {
       "label": "fingerprint.rs",
@@ -237,10 +237,373 @@
       "source_file": "crates/ast/src/fingerprint.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "fingerprint.rs",
       "id": "crates_ast_src_fingerprint",
-      "community_name": "fingerprint.rs"
+      "community": 2,
+      "community_name": "fingerprint.rs",
+      "norm_label": "fingerprint.rs"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "1. Dual-Tier Verification Protocol",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "readme_1_dual_tier_verification_protocol",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "1. dual-tier verification protocol"
+    },
+    {
+      "label": "2. Cryptographic Auto-Ratchet",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "readme_2_cryptographic_auto_ratchet",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "2. cryptographic auto-ratchet"
+    },
+    {
+      "label": "3. 3-Tier Mock Boundary Enforcement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "readme_3_3_tier_mock_boundary_enforcement",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "3. 3-tier mock boundary enforcement"
+    },
+    {
+      "label": "4. Dual Boundary Threat Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "readme_4_dual_boundary_threat_model",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "4. dual boundary threat model"
+    },
+    {
+      "label": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_agent_test_guard_agent_test_guard",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "\ud83d\udee1\ufe0f agent test guard (`agent-test-guard`)"
+    },
+    {
+      "label": "\ud83d\ude80 CLI Commands",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "readme_cli_commands",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "\ud83d\ude80 cli commands"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f Core Architecture & Invariants",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "readme_core_architecture_invariants",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "\ud83c\udfdb\ufe0f core architecture & invariants"
+    },
+    {
+      "label": "\ud83d\udcc4 Diagnostic Codes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "readme_diagnostic_codes",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "\ud83d\udcc4 diagnostic codes"
+    },
+    {
+      "label": "\ud83d\udcdc License",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "readme_license",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "\ud83d\udcdc license"
+    },
+    {
+      "label": "\ud83d\udce6 Supported Ecosystems",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "readme_supported_ecosystems",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "\ud83d\udce6 supported ecosystems"
+    },
+    {
+      "label": "\u26a1 The Problem: Specification Gaming & Reward Hacking",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "readme_the_problem_specification_gaming_reward_hacking",
+      "community": 20,
+      "community_name": "\ud83d\udee1\ufe0f Agent Test Guard (`agent-test-guard`)",
+      "norm_label": "\u26a1 the problem: specification gaming & reward hacking"
+    },
+    {
+      "label": "implementation_plan.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "implementation_plan.md"
+    },
+    {
+      "label": "4-Phase Phased Implementation Roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_4_phase_phased_implementation_roadmap",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "4-phase phased implementation roadmap"
+    },
+    {
+      "label": "Executive Summary & Architecture Overview",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_executive_summary_architecture_overview",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "executive summary & architecture overview"
+    },
+    {
+      "label": "Hard Invariants & Technical Specifications",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_hard_invariants_technical_specifications",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "hard invariants & technical specifications"
+    },
+    {
+      "label": "Implementation Plan: Agent Test Guard (`agent-test-guard`)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_implementation_plan_agent_test_guard_agent_test_guard",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "implementation plan: agent test guard (`agent-test-guard`)"
+    },
+    {
+      "label": "Phase 1: Core Engine & AST Foundations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_phase_1_core_engine_ast_foundations",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "phase 1: core engine & ast foundations"
+    },
+    {
+      "label": "Phase 2: Rules Engine & Git Index Blob Integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_phase_2_rules_engine_git_index_blob_integration",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "phase 2: rules engine & git index blob integration"
+    },
+    {
+      "label": "Phase 3: Polyglot Expansion, CLI Commands & Dual Output",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_phase_3_polyglot_expansion_cli_commands_dual_output",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "phase 3: polyglot expansion, cli commands & dual output"
+    },
+    {
+      "label": "Phase 4: Distribution, Packaging & CI Integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_phase_4_distribution_packaging_ci_integration",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "phase 4: distribution, packaging & ci integration"
+    },
+    {
+      "label": "Workspace & Crate Hierarchy",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "artifacts_implementation_plan_workspace_crate_hierarchy",
+      "community": 21,
+      "community_name": "4-Phase Phased Implementation Roadmap",
+      "norm_label": "workspace & crate hierarchy"
+    },
+    {
+      "label": "canonical_test.rs",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "canonical_test.rs"
+    },
+    {
+      "label": "AuditRecord",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_auditrecord",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "auditrecord"
+    },
+    {
+      "label": "LogMeta",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_logmeta",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "logmeta"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_rs_string",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "string"
+    },
+    {
+      "label": "test_array_ordering_when_elements_unordered()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_test_array_ordering_when_elements_unordered",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "test_array_ordering_when_elements_unordered()"
+    },
+    {
+      "label": "test_lexicographical_key_sorting_when_nested_and_utf16_code_units()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_test_lexicographical_key_sorting_when_nested_and_utf16_code_units",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "test_lexicographical_key_sorting_when_nested_and_utf16_code_units()"
+    },
+    {
+      "label": "test_minimal_escaping_when_control_chars_and_utf8_present()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_test_minimal_escaping_when_control_chars_and_utf8_present",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "test_minimal_escaping_when_control_chars_and_utf8_present()"
+    },
+    {
+      "label": "test_number_formatting_when_floats_and_integers_processed()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_test_number_formatting_when_floats_and_integers_processed",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "test_number_formatting_when_floats_and_integers_processed()"
+    },
+    {
+      "label": "test_whitespace_removal_when_multiline_and_spaced_json()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_test_whitespace_removal_when_multiline_and_spaced_json",
+      "community": 22,
+      "community_name": "canonical_test.rs",
+      "norm_label": "test_whitespace_removal_when_multiline_and_spaced_json()"
     },
     {
       "label": "grammar.rs",
@@ -248,10 +611,10 @@
       "source_file": "crates/ast/src/grammar.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "grammar.rs",
       "id": "crates_ast_src_grammar",
-      "community_name": "grammar.rs"
+      "community": 3,
+      "community_name": "grammar.rs",
+      "norm_label": "grammar.rs"
     },
     {
       "label": "ast/src/lib.rs",
@@ -259,10 +622,10 @@
       "source_file": "crates/ast/src/lib.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": "ast/src/lib.rs",
       "id": "crates_ast_src_lib",
-      "community_name": "ast/src/lib.rs"
+      "community": 4,
+      "community_name": "ast/src/lib.rs",
+      "norm_label": "ast/src/lib.rs"
     },
     {
       "label": "parser.rs",
@@ -270,10 +633,10 @@
       "source_file": "crates/ast/src/parser.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": "parser.rs",
       "id": "crates_ast_src_parser",
-      "community_name": "parser.rs"
+      "community": 5,
+      "community_name": "parser.rs",
+      "norm_label": "parser.rs"
     },
     {
       "label": "queries.rs",
@@ -281,10 +644,10 @@
       "source_file": "crates/ast/src/queries.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 6,
-      "norm_label": "queries.rs",
       "id": "crates_ast_src_queries",
-      "community_name": "queries.rs"
+      "community": 6,
+      "community_name": "queries.rs",
+      "norm_label": "queries.rs"
     },
     {
       "label": "canonical.rs",
@@ -292,10 +655,208 @@
       "source_file": "crates/core/src/canonical.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "canonical.rs",
       "id": "crates_core_src_canonical",
-      "community_name": "canonical.rs"
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "canonical.rs"
+    },
+    {
+      "label": "CanonicalError",
+      "file_type": "code",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_canonicalerror",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "canonicalerror"
+    },
+    {
+      "label": ".from()",
+      "file_type": "code",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_canonicalerror_from",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": ".from()"
+    },
+    {
+      "label": "canonicalize_json_str()",
+      "file_type": "code",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_canonicalize_json_str",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "canonicalize_json_str()"
+    },
+    {
+      "label": "canonicalize_value()",
+      "file_type": "code",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_canonicalize_value",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "canonicalize_value()"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_rs_string",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "string"
+    },
+    {
+      "label": "to_canonical_string()",
+      "file_type": "code",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_to_canonical_string",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "to_canonical_string()"
+    },
+    {
+      "label": "to_canonical_vec()",
+      "file_type": "code",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "crates_core_src_canonical_to_canonical_vec",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "to_canonical_vec()"
+    },
+    {
+      "label": "test_error_handling_when_invalid_json_or_non_finite_float()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_test_error_handling_when_invalid_json_or_non_finite_float",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "test_error_handling_when_invalid_json_or_non_finite_float()"
+    },
+    {
+      "label": "test_idempotence_when_canonicalized_repeatedly()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_test_idempotence_when_canonicalized_repeatedly",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "test_idempotence_when_canonicalized_repeatedly()"
+    },
+    {
+      "label": "test_typed_struct_serialization_when_string_and_vec_invoked()",
+      "file_type": "code",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "crates_core_tests_canonical_test_test_typed_struct_serialization_when_string_and_vec_invoked",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "test_typed_struct_serialization_when_string_and_vec_invoked()"
+    },
+    {
+      "label": "Error",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "error",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "error"
+    },
+    {
+      "label": "From",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "from",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "from"
+    },
+    {
+      "label": "FromUtf8Error",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "fromutf8error",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "fromutf8error"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "result",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "result"
+    },
+    {
+      "label": "Self",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "self",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "self"
+    },
+    {
+      "label": "T",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "t",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "t"
+    },
+    {
+      "label": "Value",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "value",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "value"
+    },
+    {
+      "label": "Vec",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "vec",
+      "community": 7,
+      "community_name": "canonicalize_value",
+      "norm_label": "vec"
     },
     {
       "label": "crypto.rs",
@@ -303,10 +864,10 @@
       "source_file": "crates/core/src/crypto.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
-      "norm_label": "crypto.rs",
       "id": "crates_core_src_crypto",
-      "community_name": "crypto.rs"
+      "community": 8,
+      "community_name": "crypto.rs",
+      "norm_label": "crypto.rs"
     },
     {
       "label": "core/src/lib.rs",
@@ -314,13 +875,49 @@
       "source_file": "crates/core/src/lib.rs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
-      "norm_label": "core/src/lib.rs",
       "id": "crates_core_src_lib",
-      "community_name": "core/src/lib.rs"
+      "community": 9,
+      "community_name": "core/src/lib.rs",
+      "norm_label": "core/src/lib.rs"
     }
   ],
   "links": [
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_json_str",
+      "target": "crates_core_src_canonical_canonicalize_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_value",
+      "target": "crates_core_src_canonical_to_canonical_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_string",
+      "target": "crates_core_src_canonical_to_canonical_vec",
+      "confidence_score": 1.0
+    },
     {
       "relation": "depends_on",
       "context": "dependency",
@@ -401,9 +998,9 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "crates_cli_src_main_cli",
-      "target": "option"
+      "target": "option",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -413,9 +1010,57 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "crates_cli_src_main_commands",
-      "target": "string"
+      "target": "crates_cli_src_main_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalerror",
+      "target": "error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_auditrecord",
+      "target": "crates_core_tests_canonical_test_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_auditrecord",
+      "target": "crates_core_tests_canonical_test_logmeta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_logmeta",
+      "target": "crates_core_tests_canonical_test_rs_string",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -425,9 +1070,372 @@
       "weight": 1.0,
       "context": "generic_arg",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "crates_cli_src_main_cli",
-      "target": "crates_cli_src_main_commands"
+      "target": "crates_cli_src_main_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalerror",
+      "target": "fromutf8error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalerror",
+      "target": "crates_core_src_canonical_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L51",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_json_str",
+      "target": "crates_core_src_canonical_canonicalerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L51",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_json_str",
+      "target": "crates_core_src_canonical_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_value",
+      "target": "crates_core_src_canonical_canonicalerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_value",
+      "target": "crates_core_src_canonical_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_string",
+      "target": "crates_core_src_canonical_canonicalerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_string",
+      "target": "crates_core_src_canonical_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_vec",
+      "target": "crates_core_src_canonical_canonicalerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_vec",
+      "target": "vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical",
+      "target": "error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_src_canonical",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalerror_from",
+      "target": "fromutf8error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalerror_from",
+      "target": "crates_core_src_canonical_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_value",
+      "target": "value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_string",
+      "target": "t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_vec",
+      "target": "t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalerror_from",
+      "target": "self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L51",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_json_str",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalize_value",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_string",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_to_canonical_vec",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan",
+      "target": "artifacts_implementation_plan_implementation_plan_agent_test_guard_agent_test_guard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan_4_phase_phased_implementation_roadmap",
+      "target": "artifacts_implementation_plan_phase_3_polyglot_expansion_cli_commands_dual_output",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan_4_phase_phased_implementation_roadmap",
+      "target": "artifacts_implementation_plan_phase_4_distribution_packaging_ci_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan_4_phase_phased_implementation_roadmap",
+      "target": "artifacts_implementation_plan_phase_1_core_engine_ast_foundations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan_4_phase_phased_implementation_roadmap",
+      "target": "artifacts_implementation_plan_phase_2_rules_engine_git_index_blob_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan_executive_summary_architecture_overview",
+      "target": "artifacts_implementation_plan_workspace_crate_hierarchy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan_implementation_plan_agent_test_guard_agent_test_guard",
+      "target": "artifacts_implementation_plan_executive_summary_architecture_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan_implementation_plan_agent_test_guard_agent_test_guard",
+      "target": "artifacts_implementation_plan_hard_invariants_technical_specifications",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/implementation_plan.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_implementation_plan_implementation_plan_agent_test_guard_agent_test_guard",
+      "target": "artifacts_implementation_plan_4_phase_phased_implementation_roadmap",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -436,9 +1444,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "crates_cli_src_main",
-      "target": "crates_cli_src_main_commands"
+      "target": "crates_cli_src_main_commands",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -447,9 +1455,9 @@
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "crates_cli_src_main",
-      "target": "crates_cli_src_main_main"
+      "target": "crates_cli_src_main_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -458,11 +1466,463 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "crates_cli_src_main",
-      "target": "crates_cli_src_main_cli"
+      "target": "crates_cli_src_main_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical",
+      "target": "crates_core_src_canonical_canonicalerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical",
+      "target": "crates_core_src_canonical_to_canonical_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical",
+      "target": "crates_core_src_canonical_to_canonical_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical",
+      "target": "crates_core_src_canonical_canonicalize_json_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical",
+      "target": "crates_core_src_canonical_canonicalize_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_test_error_handling_when_invalid_json_or_non_finite_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_test_idempotence_when_canonicalized_repeatedly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_test_typed_struct_serialization_when_string_and_vec_invoked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_auditrecord",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_test_lexicographical_key_sorting_when_nested_and_utf16_code_units",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_test_whitespace_removal_when_multiline_and_spaced_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_test_number_formatting_when_floats_and_integers_processed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_test_minimal_escaping_when_control_chars_and_utf8_present",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_logmeta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test",
+      "target": "crates_core_tests_canonical_test_test_array_ordering_when_elements_unordered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "readme_agent_test_guard_agent_test_guard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_agent_test_guard_agent_test_guard",
+      "target": "readme_core_architecture_invariants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_agent_test_guard_agent_test_guard",
+      "target": "readme_supported_ecosystems",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_agent_test_guard_agent_test_guard",
+      "target": "readme_cli_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_agent_test_guard_agent_test_guard",
+      "target": "readme_the_problem_specification_gaming_reward_hacking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_agent_test_guard_agent_test_guard",
+      "target": "readme_diagnostic_codes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_agent_test_guard_agent_test_guard",
+      "target": "readme_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_core_architecture_invariants",
+      "target": "readme_1_dual_tier_verification_protocol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_core_architecture_invariants",
+      "target": "readme_2_cryptographic_auto_ratchet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_core_architecture_invariants",
+      "target": "readme_3_3_tier_mock_boundary_enforcement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_core_architecture_invariants",
+      "target": "readme_4_dual_boundary_threat_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalerror",
+      "target": "from",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/core/src/canonical.rs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_src_canonical_canonicalerror",
+      "target": "crates_core_src_canonical_canonicalerror_from",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_array_ordering_when_elements_unordered",
+      "target": "crates_core_src_canonical_canonicalize_value"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_error_handling_when_invalid_json_or_non_finite_float",
+      "target": "crates_core_src_canonical_canonicalize_json_str"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_error_handling_when_invalid_json_or_non_finite_float",
+      "target": "crates_core_src_canonical_to_canonical_string"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_error_handling_when_invalid_json_or_non_finite_float",
+      "target": "crates_core_src_canonical_to_canonical_vec"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_idempotence_when_canonicalized_repeatedly",
+      "target": "crates_core_src_canonical_canonicalize_json_str"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_idempotence_when_canonicalized_repeatedly",
+      "target": "crates_core_src_canonical_canonicalize_value"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_lexicographical_key_sorting_when_nested_and_utf16_code_units",
+      "target": "crates_core_src_canonical_canonicalize_value"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_minimal_escaping_when_control_chars_and_utf8_present",
+      "target": "crates_core_src_canonical_canonicalize_value"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_number_formatting_when_floats_and_integers_processed",
+      "target": "crates_core_src_canonical_to_canonical_string"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L156",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_typed_struct_serialization_when_string_and_vec_invoked",
+      "target": "crates_core_src_canonical_to_canonical_string"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L157",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_typed_struct_serialization_when_string_and_vec_invoked",
+      "target": "crates_core_src_canonical_to_canonical_vec"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/core/tests/canonical_test.rs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_core_tests_canonical_test_test_whitespace_removal_when_multiline_and_spaced_json",
+      "target": "crates_core_src_canonical_canonicalize_json_str"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4538055c464f660a280e9f41805ab68d067064ce"
+  "built_at_commit": "f4735bc83693380550a817aa945515e5b0eeae93"
 }

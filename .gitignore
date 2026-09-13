@@ -26,6 +26,7 @@ Thumbs.db
 # Graphify cache
 graphify-out/cache/
 graphify-out/.rebuild.lock
+graphify-out/20*/
 
 # Agent runtime artifacts
 .omo/
