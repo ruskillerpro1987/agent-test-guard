@@ -117,9 +117,9 @@ fn test_error_handling_when_invalid_json_or_non_finite_float() {
     let res_inf: Result<Vec<u8>, CanonicalError> = to_canonical_vec(&inf_val);
 
     // Then: all operations return CanonicalError
-    assert!(matches!(res_json, Err(_)), "invalid json must yield CanonicalError");
-    assert!(matches!(res_nan, Err(_)), "NaN float must yield CanonicalError");
-    assert!(matches!(res_inf, Err(_)), "Infinity float must yield CanonicalError");
+    assert!(res_json.is_err(), "invalid json must yield CanonicalError");
+    assert!(res_nan.is_err(), "NaN float must yield CanonicalError");
+    assert!(res_inf.is_err(), "Infinity float must yield CanonicalError");
 }
 
 #[test]

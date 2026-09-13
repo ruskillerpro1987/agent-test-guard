@@ -21,5 +21,9 @@
   "19": "rules/src/lib.rs",
   "20": "🛡️ Agent Test Guard (`agent-test-guard`)",
   "21": "4-Phase Phased Implementation Roadmap",
-  "22": "canonical_test.rs"
+  "22": "AuditRecord",
+  "23": "verify",
+  "24": "hex_encode",
+  "25": "verify_hex",
+  "26": "crypto_test.rs"
 }
