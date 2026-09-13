@@ -1,0 +1,190 @@
+{
+  "communities": {
+    "0": [
+      "crates_cli_src_main",
+      "crates_cli_src_main_cli",
+      "crates_cli_src_main_commands",
+      "crates_cli_src_main_main",
+      "option",
+      "string"
+    ],
+    "1": [
+      "pkg_agent_test_guard",
+      "pkg_agent_test_guard_ast",
+      "pkg_agent_test_guard_core",
+      "pkg_agent_test_guard_rules"
+    ],
+    "2": [
+      "crates_ast_src_fingerprint"
+    ],
+    "3": [
+      "crates_ast_src_grammar"
+    ],
+    "4": [
+      "crates_ast_src_lib"
+    ],
+    "5": [
+      "crates_ast_src_parser"
+    ],
+    "6": [
+      "crates_ast_src_queries"
+    ],
+    "7": [
+      "crates_core_src_canonical"
+    ],
+    "8": [
+      "crates_core_src_crypto"
+    ],
+    "9": [
+      "crates_core_src_lib"
+    ],
+    "10": [
+      "crates_core_src_ratchet"
+    ],
+    "11": [
+      "crates_core_src_schema"
+    ],
+    "12": [
+      "crates_rules_src_anti_hollowing"
+    ],
+    "13": [
+      "crates_rules_src_anti_mock"
+    ],
+    "14": [
+      "crates_rules_src_anti_skip"
+    ],
+    "15": [
+      "crates_rules_src_anti_tautology"
+    ],
+    "16": [
+      "crates_rules_src_diagnostic"
+    ],
+    "17": [
+      "crates_rules_src_engine"
+    ],
+    "18": [
+      "crates_rules_src_import_validator"
+    ],
+    "19": [
+      "crates_rules_src_lib"
+    ]
+  },
+  "cohesion": {
+    "0": 0.4,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0
+  },
+  "gods": [
+    {
+      "id": "crates_cli_src_main_cli",
+      "label": "Cli",
+      "degree": 3
+    },
+    {
+      "id": "crates_cli_src_main_commands",
+      "label": "Commands",
+      "degree": 3
+    },
+    {
+      "id": "pkg_agent_test_guard",
+      "label": "agent-test-guard",
+      "degree": 3
+    },
+    {
+      "id": "pkg_agent_test_guard_ast",
+      "label": "agent-test-guard-ast",
+      "degree": 3
+    },
+    {
+      "id": "pkg_agent_test_guard_core",
+      "label": "agent-test-guard-core",
+      "degree": 3
+    },
+    {
+      "id": "pkg_agent_test_guard_rules",
+      "label": "agent-test-guard-rules",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "agent-test-guard",
+      "target": "agent-test-guard-ast",
+      "source_files": [
+        "crates/cli/Cargo.toml",
+        "crates/ast/Cargo.toml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "agent-test-guard",
+      "target": "agent-test-guard-core",
+      "source_files": [
+        "crates/cli/Cargo.toml",
+        "crates/core/Cargo.toml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "agent-test-guard",
+      "target": "agent-test-guard-rules",
+      "source_files": [
+        "crates/cli/Cargo.toml",
+        "crates/rules/Cargo.toml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "agent-test-guard-ast",
+      "target": "agent-test-guard-core",
+      "source_files": [
+        "crates/ast/Cargo.toml",
+        "crates/core/Cargo.toml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "agent-test-guard-rules",
+      "target": "agent-test-guard-ast",
+      "source_files": [
+        "crates/rules/Cargo.toml",
+        "crates/ast/Cargo.toml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "no_signal",
+      "question": null,
+      "why": "Not enough signal to generate questions. This usually means the corpus has no AMBIGUOUS edges, no bridge nodes, no INFERRED relationships, and all communities are tightly cohesive. Add more files or run with --mode deep to extract richer edges."
+    }
+  ]
+}
