@@ -7,7 +7,7 @@
   "5": "parser.rs",
   "6": "queries.rs",
   "7": "CanonicalError",
-  "8": "CryptoError",
+  "8": "ratchet_test.rs",
   "9": "schema_test.rs",
   "10": "ratchet.rs",
   "11": "schema.rs",
@@ -21,8 +21,5 @@
   "19": "rules/src/lib.rs",
   "20": "🛡️ Agent Test Guard (`agent-test-guard`)",
   "21": "4-Phase Phased Implementation Roadmap",
-  "22": "sign_hex",
-  "23": "generate_keypair",
-  "24": "crypto.rs",
-  "25": "crypto_test.rs"
+  "23": "crypto.rs"
 }
