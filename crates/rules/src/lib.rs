@@ -7,3 +7,6 @@ pub mod anti_tautology;
 pub mod diagnostic;
 pub mod engine;
 pub mod import_validator;
+
+pub use anti_skip::{AntiSkipRule, RuleError};
+pub use diagnostic::{Diagnostic, RuleCode, Severity, Span};
