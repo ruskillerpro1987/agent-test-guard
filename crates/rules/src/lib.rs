@@ -9,4 +9,5 @@ pub mod engine;
 pub mod import_validator;
 
 pub use anti_skip::{AntiSkipRule, RuleError};
+pub use anti_tautology::AntiTautologyRule;
 pub use diagnostic::{Diagnostic, RuleCode, Severity, Span};
