@@ -2,7 +2,7 @@
   "0": "main.rs",
   "1": "agent-test-guard",
   "2": "ast_test.rs",
-  "3": "anti_skip_test.rs",
+  "3": "anti_tautology_test.rs",
   "6": "queries.rs",
   "7": "CanonicalError",
   "8": "ratchet_test.rs",

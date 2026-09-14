@@ -1,16 +1,16 @@
 # Graph Report - agent-test-guard  (2026-09-14)
 
 ## Corpus Check
-- 32 files · ~13,417 words
+- 33 files · ~15,164 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 289 nodes · 614 edges · 18 communities
-- Extraction: 86% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 83 edges (avg confidence: 0.8)
+- 319 nodes · 683 edges · 18 communities
+- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 83 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `be58e5dc`
+- Built from commit: `57dcb185`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,20 +24,21 @@
 - schema_test.rs
 - schema.rs
 - Diagnostic
+- anti_tautology.rs
 - 🛡️ Agent Test Guard (`agent-test-guard`)
 - 4-Phase Phased Implementation Roadmap
 - crypto.rs
 
 ## God Nodes (most connected - your core abstractions)
-1. `verify_ratchet()` - 20 edges
-2. `sample_baseline_manifest()` - 19 edges
-3. `discover_tests()` - 18 edges
-4. `Diagnostic` - 18 edges
+1. `Diagnostic` - 24 edges
+2. `verify_ratchet()` - 20 edges
+3. `sample_baseline_manifest()` - 19 edges
+4. `discover_tests()` - 18 edges
 5. `BaselineManifest` - 17 edges
 6. `generate_keypair()` - 15 edges
-7. `sample_valid_manifest()` - 13 edges
-8. `CryptoError` - 12 edges
-9. `GrammarLanguage` - 11 edges
+7. `GrammarLanguage` - 14 edges
+8. `sample_valid_manifest()` - 13 edges
+9. `CryptoError` - 12 edges
 10. `CanonicalError` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -78,7 +79,7 @@ Cohesion: 0.15
 Nodes (25): CanonicalError, canonicalize_json_str(), canonicalize_value(), Error, Result, Self, String, Value (+17 more)
 
 ### Community 8 - "ratchet_test.rs"
-Cohesion: 0.15
+Cohesion: 0.16
 Nodes (31): advance_baseline(), RatchetDiff, RatchetError, RatchetOptions, Option, Result, SigningKey, String (+23 more)
 
 ### Community 9 - "schema_test.rs"
@@ -90,8 +91,12 @@ Cohesion: 0.16
 Nodes (19): BaselineConfig, BaselineManifest, is_hex_len(), is_valid_path(), RatchetState, Error, Option, Result (+11 more)
 
 ### Community 14 - "Diagnostic"
-Cohesion: 0.10
+Cohesion: 0.08
 Nodes (27): AntiSkipRule, check_js(), check_js_call(), check_rust(), inspect_js_member_expression(), inspect_rust_function(), F, Node (+19 more)
+
+### Community 15 - "anti_tautology.rs"
+Cohesion: 0.24
+Nodes (17): AntiTautologyRule, check_js(), check_rust(), find_binary_op(), inspect_js_call(), inspect_rust_macro(), is_binary_tautology(), is_constant_literal() (+9 more)
 
 ### Community 20 - "🛡️ Agent Test Guard (`agent-test-guard`)"
 Cohesion: 0.17
@@ -112,12 +117,12 @@ Nodes (37): blake3_hash(), blake3_hash_hex(), blake3_keyed_hash(), blake3_keyed_
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Diagnostic` connect `Diagnostic` to `anti_skip_test.rs`?**
+- **Why does `GrammarLanguage` connect `ast_test.rs` to `anti_tautology.rs`, `queries.rs`, `Diagnostic`?**
+  _High betweenness centrality (0.070) - this node is a cross-community bridge._
+- **Why does `Diagnostic` connect `Diagnostic` to `anti_tautology.rs`?**
   _High betweenness centrality (0.064) - this node is a cross-community bridge._
-- **Why does `GrammarLanguage` connect `ast_test.rs` to `queries.rs`, `Diagnostic`?**
-  _High betweenness centrality (0.056) - this node is a cross-community bridge._
 - **Why does `SchemaError` connect `schema.rs` to `ratchet_test.rs`, `crypto.rs`, `CanonicalError`?**
-  _High betweenness centrality (0.046) - this node is a cross-community bridge._
+  _High betweenness centrality (0.037) - this node is a cross-community bridge._
 - **Are the 13 inferred relationships involving `verify_ratchet()` (e.g. with `test_verify_ratchet_fails_when_allow_shrink_true_with_invalid_signature()` and `test_verify_ratchet_fails_when_allow_shrink_true_with_untrusted_public_key()`) actually correct?**
   _`verify_ratchet()` has 13 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 9 inferred relationships involving `discover_tests()` (e.g. with `test_rust_discovery_when_async_tokio_test_present()` and `test_rust_discovery_when_non_test_functions_and_multiple_assertions_present()`) actually correct?**
