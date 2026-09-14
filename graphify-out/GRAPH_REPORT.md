@@ -1,16 +1,16 @@
 # Graph Report - agent-test-guard  (2026-09-14)
 
 ## Corpus Check
-- 33 files · ~15,164 words
+- 34 files · ~16,827 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 319 nodes · 683 edges · 18 communities
-- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 83 edges (avg confidence: 0.8)
+- 358 nodes · 783 edges · 19 communities
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 83 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `57dcb185`
+- Built from commit: `122fa7c8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,11 +18,11 @@
 - main.rs
 - agent-test-guard
 - ast_test.rs
-- queries.rs
 - CanonicalError
 - ratchet_test.rs
 - schema_test.rs
 - schema.rs
+- GrammarLanguage
 - Diagnostic
 - anti_tautology.rs
 - 🛡️ Agent Test Guard (`agent-test-guard`)
@@ -30,13 +30,13 @@
 - crypto.rs
 
 ## God Nodes (most connected - your core abstractions)
-1. `Diagnostic` - 24 edges
+1. `Diagnostic` - 32 edges
 2. `verify_ratchet()` - 20 edges
-3. `sample_baseline_manifest()` - 19 edges
-4. `discover_tests()` - 18 edges
-5. `BaselineManifest` - 17 edges
-6. `generate_keypair()` - 15 edges
-7. `GrammarLanguage` - 14 edges
+3. `GrammarLanguage` - 19 edges
+4. `sample_baseline_manifest()` - 19 edges
+5. `discover_tests()` - 18 edges
+6. `BaselineManifest` - 17 edges
+7. `generate_keypair()` - 15 edges
 8. `sample_valid_manifest()` - 13 edges
 9. `CryptoError` - 12 edges
 10. `CanonicalError` - 11 edges
@@ -56,7 +56,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (18 total, 0 thin omitted)
+## Communities (19 total, 0 thin omitted)
 
 ### Community 0 - "main.rs"
 Cohesion: 0.40
@@ -67,12 +67,8 @@ Cohesion: 1.00
 Nodes (4): agent-test-guard, agent-test-guard-ast, agent-test-guard-core, agent-test-guard-rules
 
 ### Community 2 - "ast_test.rs"
-Cohesion: 0.07
-Nodes (35): AsRef, compute_structural_fingerprint(), hash_node_structure(), Node, String, detect_language(), GrammarLanguage, Option (+27 more)
-
-### Community 6 - "queries.rs"
-Cohesion: 0.32
-Nodes (16): classify_js_call(), collect_rust_tests(), count_js_assertions(), count_rust_assertions(), DiscoveredTest, extract_string_literal(), inspect_rust_function(), is_js_assertion_call() (+8 more)
+Cohesion: 0.10
+Nodes (38): compute_structural_fingerprint(), hash_node_structure(), Node, String, classify_js_call(), collect_rust_tests(), count_js_assertions(), count_rust_assertions() (+30 more)
 
 ### Community 7 - "CanonicalError"
 Cohesion: 0.15
@@ -88,10 +84,14 @@ Nodes (12): sample_valid_manifest(), test_baseline_roundtrip_when_valid_json_ser
 
 ### Community 11 - "schema.rs"
 Cohesion: 0.16
-Nodes (19): BaselineConfig, BaselineManifest, is_hex_len(), is_valid_path(), RatchetState, Error, Option, Result (+11 more)
+Nodes (19): BaselineConfig, BaselineManifest, is_hex_len(), is_valid_path(), RatchetState, Default, Error, Option (+11 more)
+
+### Community 12 - "GrammarLanguage"
+Cohesion: 0.10
+Nodes (34): AsRef, detect_language(), GrammarLanguage, Option, parse(), ParseError, Result, Tree (+26 more)
 
 ### Community 14 - "Diagnostic"
-Cohesion: 0.08
+Cohesion: 0.10
 Nodes (27): AntiSkipRule, check_js(), check_js_call(), check_rust(), inspect_js_member_expression(), inspect_rust_function(), F, Node (+19 more)
 
 ### Community 15 - "anti_tautology.rs"
@@ -117,12 +117,12 @@ Nodes (37): blake3_hash(), blake3_hash_hex(), blake3_keyed_hash(), blake3_keyed_
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `GrammarLanguage` connect `ast_test.rs` to `anti_tautology.rs`, `queries.rs`, `Diagnostic`?**
-  _High betweenness centrality (0.070) - this node is a cross-community bridge._
-- **Why does `Diagnostic` connect `Diagnostic` to `anti_tautology.rs`?**
-  _High betweenness centrality (0.064) - this node is a cross-community bridge._
+- **Why does `GrammarLanguage` connect `GrammarLanguage` to `ast_test.rs`, `Diagnostic`, `anti_tautology.rs`?**
+  _High betweenness centrality (0.085) - this node is a cross-community bridge._
+- **Why does `Diagnostic` connect `Diagnostic` to `GrammarLanguage`, `anti_tautology.rs`?**
+  _High betweenness centrality (0.075) - this node is a cross-community bridge._
 - **Why does `SchemaError` connect `schema.rs` to `ratchet_test.rs`, `crypto.rs`, `CanonicalError`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
 - **Are the 13 inferred relationships involving `verify_ratchet()` (e.g. with `test_verify_ratchet_fails_when_allow_shrink_true_with_invalid_signature()` and `test_verify_ratchet_fails_when_allow_shrink_true_with_untrusted_public_key()`) actually correct?**
   _`verify_ratchet()` has 13 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 9 inferred relationships involving `discover_tests()` (e.g. with `test_rust_discovery_when_async_tokio_test_present()` and `test_rust_discovery_when_non_test_functions_and_multiple_assertions_present()`) actually correct?**
@@ -130,4 +130,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **What connects `⚡ The Problem: Specification Gaming & Reward Hacking`, `1. Dual-Tier Verification Protocol`, `2. Cryptographic Auto-Ratchet` to the rest of the system?**
   _15 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ast_test.rs` be split into smaller, more focused modules?**
-  _Cohesion score 0.0708245243128964 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09725158562367865 - nodes in this community are weakly interconnected._
