@@ -7,7 +7,6 @@ use tree_sitter::{Node, Tree};
 use crate::anti_skip::RuleError;
 use crate::diagnostic::{Diagnostic, RuleCode, Severity, Span};
 
-/// E003 rule: Detects hollowed test bodies and tests with assertion counts below the floor.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct AntiHollowingRule {
     min_assertions: usize,
@@ -77,30 +76,51 @@ fn check_rust(file: &str, root: &Node, src: &str, floor: usize, diags: &mut Vec<
 
 fn inspect_rust_test(node: &Node, source: &str) -> Option<(String, Span, usize)> {
     let mut is_test = false;
-    let mut check_attr = |attr_item: &Node| {
+
+    let check_attr = |attr_item: &Node| -> bool {
         for i in 0..attr_item.child_count() {
-            if attr_item.child(i).filter(|a| a.kind() == "attribute").is_some_and(|a| is_rust_test_attr(&a, source)) {
-                is_test = true;
+            if let Some(attr) = attr_item.child(i).filter(|a| a.kind() == "attribute") {
+                if is_rust_test_attr(&attr, source) {
+                    return true;
+                }
             }
         }
+        false
     };
+
+    // 1. Проверяем внешние атрибуты: идем назад строго по смежным attribute_item и комментариям.
+    // При встрече любого другого узла (например, предыдущей функции) немедленно прерываем поиск.
     let mut prev = node.prev_sibling();
     while let Some(sibling) = prev {
         match sibling.kind() {
-            "attribute_item" => check_attr(&sibling),
+            "attribute_item" => {
+                if check_attr(&sibling) {
+                    is_test = true;
+                    break;
+                }
+            }
             "line_comment" | "block_comment" | "comment" => {}
             _ => break,
         }
         prev = sibling.prev_sibling();
     }
-    for i in 0..node.child_count() {
-        if let Some(child) = node.child(i).filter(|c| c.kind() == "attribute_item") {
-            check_attr(&child);
+
+    // 2. Проверяем внутренние атрибуты внутри тела функции
+    if !is_test {
+        for i in 0..node.child_count() {
+            if let Some(child) = node.child(i).filter(|c| c.kind() == "attribute_item") {
+                if check_attr(&child) {
+                    is_test = true;
+                    break;
+                }
+            }
         }
     }
+
     if !is_test {
         return None;
     }
+
     let name = node.child_by_field_name("name").map(|n| source[n.byte_range()].to_string()).unwrap_or_else(|| "anonymous".to_string());
     let assertions = node.child_by_field_name("body").map(|b| count_rust_assertions(&b, source)).unwrap_or(0);
     Some((name, Span::from_node(node), assertions))
@@ -186,18 +206,43 @@ fn count_js_assertions(test_node: &Node, source: &str) -> usize {
 }
 
 fn is_js_assertion(node: &Node, source: &str) -> bool {
-    let Some(func) = (node.kind() == "call_expression")
-        .then(|| node.child_by_field_name("function"))
-        .flatten()
-    else {
+    if node.kind() != "call_expression" {
+        return false;
+    }
+    let Some(func) = node.child_by_field_name("function") else {
         return false;
     };
+
     match func.kind() {
-        "identifier" => matches!(&source[func.byte_range()], "expect" | "assert"),
-        "member_expression" => func
-            .child_by_field_name("object")
-            .filter(|o| o.kind() == "identifier")
-            .is_some_and(|o| matches!(&source[o.byte_range()], "assert" | "t")),
+        // Одиночные вызовы: expect(...) или assert(...)
+        "identifier" => {
+            // Если вызов expect(...) находится внутри цепочки .toBe(...), 
+            // родительский вызов сам будет засчитан как ассерт, поэтому отдельный внутренний вызов не считаем дважды
+            if let Some(parent) = node.parent() {
+                if parent.kind() == "member_expression" {
+                    return false;
+                }
+            }
+            matches!(&source[func.byte_range()], "expect" | "assert")
+        }
+        "member_expression" => {
+            let Some(obj) = func.child_by_field_name("object") else {
+                return false;
+            };
+            // 1) assert.strictEqual(...) или t.is(...)
+            if obj.kind() == "identifier" && matches!(&source[obj.byte_range()], "assert" | "t") {
+                return true;
+            }
+            // 2) Цепочка матчеров expect(...).toBe(...)
+            if obj.kind() == "call_expression" {
+                if let Some(inner_func) = obj.child_by_field_name("function") {
+                    if inner_func.kind() == "identifier" && &source[inner_func.byte_range()] == "expect" {
+                        return true;
+                    }
+                }
+            }
+            false
+        }
         _ => false,
     }
 }

@@ -79,32 +79,51 @@ fn inspect_rust_function(node: &Node, source: &str) -> Option<(String, Option<Sp
 
     let mut check_attribute = |attr_item: &Node| {
         for i in 0..attr_item.child_count() {
-            if let Some(attr_node) = attr_item.child(i).filter(|a| a.kind() == "attribute") {
-                if let Some(name_node) = attr_node.named_child(0) {
-                    let name = &source[name_node.byte_range()];
-                    if name == "test" || name.ends_with("::test") {
-                        is_test = true;
-                    } else if name == "ignore" {
-                        ignore_span = Some(Span::from_node(attr_item));
+            let Some(attr_node) = attr_item.child(i).filter(|a| a.kind() == "attribute") else {
+                continue;
+            };
+
+            if let Some(first) = attr_node.named_child(0) {
+                match first.kind() {
+                    "identifier" => {
+                        let name = &source[first.byte_range()];
+                        if name == "test" || name == "rstest" {
+                            is_test = true;
+                        } else if name == "ignore" {
+                            ignore_span = Some(Span::from_node(attr_item));
+                        }
+                    }
+                    "scoped_identifier" => {
+                        let name = &source[first.byte_range()];
+                        if name.ends_with("::test") {
+                            is_test = true;
+                        }
+                    }
+                    _ => {
+                        let full_attr = &source[first.byte_range()];
+                        if full_attr.starts_with("ignore") {
+                            ignore_span = Some(Span::from_node(attr_item));
+                        }
                     }
                 }
             }
         }
     };
 
+    // Проверяем смежные внешние атрибуты перед функцией с безопасным обрывом
     let mut prev = node.prev_sibling();
     while let Some(sibling) = prev {
-        let kind = sibling.kind();
-        if kind == "attribute_item" {
-            check_attribute(&sibling);
-            prev = sibling.prev_sibling();
-        } else if matches!(kind, "line_comment" | "block_comment" | "comment") {
-            prev = sibling.prev_sibling();
-        } else {
-            break;
+        match sibling.kind() {
+            "attribute_item" => {
+                check_attribute(&sibling);
+            }
+            "line_comment" | "block_comment" | "comment" => {}
+            _ => break,
         }
+        prev = sibling.prev_sibling();
     }
 
+    // Проверяем внутренние атрибуты внутри узла функции
     for i in 0..node.child_count() {
         if let Some(child) = node.child(i).filter(|c| c.kind() == "attribute_item") {
             check_attribute(&child);
