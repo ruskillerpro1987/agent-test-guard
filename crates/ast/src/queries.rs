@@ -119,8 +119,18 @@ fn count_rust_assertions(body: &Node, source: &str) -> usize {
     count
 }
 
+struct SuiteEntry {
+    name: String,
+    is_skipped: bool,
+    is_focused: bool,
+}
+
 enum JsCallKind {
-    Describe(String),
+    Describe {
+        name: String,
+        is_skipped: bool,
+        is_focused: bool,
+    },
     Test {
         name: String,
         is_skipped: bool,
@@ -131,13 +141,23 @@ enum JsCallKind {
 fn walk_js_node(
     node: &Node,
     source: &str,
-    suites: &mut Vec<String>,
+    suites: &mut Vec<SuiteEntry>,
     tests: &mut Vec<DiscoveredTest>,
 ) {
     if node.kind() == "call_expression" {
         match classify_js_call(node, source) {
-            Some(JsCallKind::Describe(suite_name)) => {
-                suites.push(suite_name);
+            Some(JsCallKind::Describe {
+                name,
+                is_skipped,
+                is_focused,
+            }) => {
+                let parent_skipped = suites.iter().any(|s| s.is_skipped);
+                let parent_focused = suites.iter().any(|s| s.is_focused);
+                suites.push(SuiteEntry {
+                    name,
+                    is_skipped: is_skipped || parent_skipped,
+                    is_focused: is_focused || parent_focused,
+                });
                 if let Some(args) = node.child_by_field_name("arguments") {
                     let mut cursor = args.walk();
                     for child in args.children(&mut cursor) {
@@ -152,13 +172,21 @@ fn walk_js_node(
                 is_skipped,
                 is_focused,
             }) => {
-                let suite_name = (!suites.is_empty()).then(|| suites.join(" > "));
+                let parent_skipped = suites.iter().any(|s| s.is_skipped);
+                let parent_focused = suites.iter().any(|s| s.is_focused);
+                let suite_name = (!suites.is_empty()).then(|| {
+                    suites
+                        .iter()
+                        .map(|s| s.name.as_str())
+                        .collect::<Vec<_>>()
+                        .join(" > ")
+                });
                 let assertion_count = count_js_assertions(node, source);
                 tests.push(DiscoveredTest {
                     name,
                     assertion_count,
-                    is_skipped,
-                    is_focused,
+                    is_skipped: is_skipped || parent_skipped,
+                    is_focused: is_focused || parent_focused,
                     suite_name,
                 });
                 return;
@@ -180,7 +208,21 @@ fn classify_js_call(node: &Node, source: &str) -> Option<JsCallKind> {
 
     match func.kind() {
         "identifier" => match &source[func.byte_range()] {
-            "describe" => Some(JsCallKind::Describe(name)),
+            "describe" => Some(JsCallKind::Describe {
+                name,
+                is_skipped: false,
+                is_focused: false,
+            }),
+            "xdescribe" => Some(JsCallKind::Describe {
+                name,
+                is_skipped: true,
+                is_focused: false,
+            }),
+            "fdescribe" => Some(JsCallKind::Describe {
+                name,
+                is_skipped: false,
+                is_focused: true,
+            }),
             "test" | "it" => Some(JsCallKind::Test {
                 name,
                 is_skipped: false,
@@ -202,13 +244,27 @@ fn classify_js_call(node: &Node, source: &str) -> Option<JsCallKind> {
             let obj = &source[func.child_by_field_name("object")?.byte_range()];
             let prop = &source[func.child_by_field_name("property")?.byte_range()];
             match (obj, prop) {
-                ("describe", _) => Some(JsCallKind::Describe(name)),
-                ("test" | "it", "skip") => Some(JsCallKind::Test {
+                ("describe", "skip") | ("xdescribe", _) => Some(JsCallKind::Describe {
                     name,
                     is_skipped: true,
                     is_focused: false,
                 }),
-                ("test" | "it", "only") => Some(JsCallKind::Test {
+                ("describe", "only") | ("fdescribe", _) => Some(JsCallKind::Describe {
+                    name,
+                    is_skipped: false,
+                    is_focused: true,
+                }),
+                ("describe", _) => Some(JsCallKind::Describe {
+                    name,
+                    is_skipped: false,
+                    is_focused: false,
+                }),
+                ("test" | "it", "skip") | ("xtest" | "xit", _) => Some(JsCallKind::Test {
+                    name,
+                    is_skipped: true,
+                    is_focused: false,
+                }),
+                ("test" | "it", "only") | ("fit", _) => Some(JsCallKind::Test {
                     name,
                     is_skipped: false,
                     is_focused: true,
