@@ -85,7 +85,7 @@ fn inspect_rust_macro(file_path: &str, node: &Node, source: &str) -> Option<Diag
         }
         "assert_eq" | "debug_assert_eq" if args.len() >= 2 => {
             let (l, r) = (args[0].trim(), args[1].trim());
-            l == r || (is_constant_literal(l) && is_constant_literal(r) && l == r)
+            l == r
         }
         "assert_ne" | "debug_assert_ne" if args.len() >= 2 => {
             let (l, r) = (args[0].trim(), args[1].trim());
@@ -133,7 +133,7 @@ fn inspect_js_call(file_path: &str, node: &Node, source: &str) -> Option<Diagnos
                 "equal" | "strictEqual" | "deepEqual" | "is" => {
                     let l = source[args.named_child(0)?.byte_range()].trim();
                     let r = source[args.named_child(1)?.byte_range()].trim();
-                    l == r || (is_constant_literal(l) && is_constant_literal(r) && l == r)
+                    l == r
                 }
                 _ => false,
             };
@@ -222,7 +222,7 @@ fn is_binary_tautology(expr: &str) -> bool {
         return false;
     };
     if is_eq {
-        l == r || (is_constant_literal(l) && is_constant_literal(r) && l == r)
+        l == r
     } else {
         is_constant_literal(l) && is_constant_literal(r) && l != r
     }
