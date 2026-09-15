@@ -43,6 +43,13 @@ pub enum RatchetError {
     #[error("Missing tests: {0:?}")]
     MissingTests(Vec<String>),
 
+    #[error("Assertion count decreased for test '{id}': baseline {baseline}, current {current}")]
+    AssertionCountDecreased {
+        id: String,
+        baseline: usize,
+        current: usize,
+    },
+
     #[error("Test count decreased: baseline {baseline}, current {current}")]
     TestCountDecreased { baseline: usize, current: usize },
 
@@ -124,6 +131,20 @@ pub fn verify_ratchet(
         ));
     }
 
+    let assertion_decreased = modified
+        .iter()
+        .find(|m| m.new_assertion_count < m.old_assertion_count);
+
+    if let Some(m) = assertion_decreased {
+        if !options.allow_shrink {
+            return Err(RatchetError::AssertionCountDecreased {
+                id: m.id.clone(),
+                baseline: m.old_assertion_count,
+                current: m.new_assertion_count,
+            });
+        }
+    }
+
     if current.ratchet.total_tests < baseline.ratchet.total_tests && !options.allow_shrink {
         return Err(RatchetError::TestCountDecreased {
             baseline: baseline.ratchet.total_tests,
@@ -131,8 +152,10 @@ pub fn verify_ratchet(
         });
     }
 
-    let shrink_occurred =
-        !removed.is_empty() || current.ratchet.total_tests < baseline.ratchet.total_tests;
+    let shrink_occurred = !removed.is_empty()
+        || current.ratchet.total_tests < baseline.ratchet.total_tests
+        || assertion_decreased.is_some();
+
     if shrink_occurred {
         let sig = current
             .signature
