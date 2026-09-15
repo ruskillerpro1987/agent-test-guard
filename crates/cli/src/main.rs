@@ -5,6 +5,7 @@ extern "C" {}
 use std::path::Path;
 use clap::{Parser, Subcommand};
 use git2::{Repository, StatusOptions};
+use rayon::prelude::*;
 
 use agent_test_guard_ast::grammar::detect_language;
 use agent_test_guard_rules::anti_skip::AntiSkipRule;
@@ -47,6 +48,12 @@ enum Commands {
     },
 }
 
+struct StagedFileItem {
+    path_str: String,
+    source: String,
+    lang: agent_test_guard_ast::grammar::GrammarLanguage,
+}
+
 fn check_staged_repo(repo_path: &Path) -> Result<Vec<Diagnostic>, String> {
     let repo = Repository::discover(repo_path)
         .map_err(|e| format!("Failed to discover git repository: {e}"))?;
@@ -62,7 +69,7 @@ fn check_staged_repo(repo_path: &Path) -> Result<Vec<Diagnostic>, String> {
         .statuses(Some(&mut status_opts))
         .map_err(|e| format!("Failed to fetch git statuses: {e}"))?;
 
-    let mut diagnostics = Vec::new();
+    let mut items = Vec::new();
 
     for entry in statuses.iter() {
         let status = entry.status();
@@ -84,19 +91,32 @@ fn check_staged_repo(repo_path: &Path) -> Result<Vec<Diagnostic>, String> {
                 .map_err(|e| format!("Failed to find blob for {path_str}: {e}"))?;
 
             let source = match std::str::from_utf8(blob.content()) {
-                Ok(s) => s,
+                Ok(s) => s.to_string(),
                 Err(_) => continue,
             };
 
-            if let Ok(mut diags) = AntiSkipRule::check_source(path_str, source, lang) {
-                diagnostics.append(&mut diags);
-            }
-
-            if let Ok(mut diags) = AntiTautologyRule::check_source(path_str, source, lang) {
-                diagnostics.append(&mut diags);
-            }
+            items.push(StagedFileItem {
+                path_str: path_str.to_string(),
+                source,
+                lang,
+            });
         }
     }
+
+    // Параллельная проверка правил через Rayon для гарантии бюджета <25ms
+    let diagnostics: Vec<Diagnostic> = items
+        .par_iter()
+        .flat_map(|item| {
+            let mut file_diags = Vec::new();
+            if let Ok(mut diags) = AntiSkipRule::check_source(&item.path_str, &item.source, item.lang) {
+                file_diags.append(&mut diags);
+            }
+            if let Ok(mut diags) = AntiTautologyRule::check_source(&item.path_str, &item.source, item.lang) {
+                file_diags.append(&mut diags);
+            }
+            file_diags
+        })
+        .collect();
 
     Ok(diagnostics)
 }
