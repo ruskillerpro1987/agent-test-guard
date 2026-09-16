@@ -1,0 +1,18 @@
+// Realistic Rust test file 19
+#[cfg(test)]
+mod tests_19 {
+    #[test]
+    fn test_computation_19() {
+        let x = 19 * 2 + 10;
+        let y = x * 3;
+        assert_eq!(y, (19 * 2 + 10) * 3);
+        assert!(y > 0);
+    }
+
+    #[test]
+    fn test_validation_19() {
+        let text = format!("item_19");
+        assert_eq!(text.len(), 7);
+        assert!(!text.is_empty());
+    }
+}
